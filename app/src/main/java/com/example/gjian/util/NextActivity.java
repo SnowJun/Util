@@ -9,12 +9,17 @@ import android.support.v7.widget.RecyclerView;
  */
 public class NextActivity extends Activity {
 
-    private RecyclerView mRvDemo;
+    private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycle_view);
         ToastUtils.getInstance(getApplicationContext()).showToast("next page",false);
+        initView();
+    }
+
+    private void initView() {
+        mRecyclerView = (RecyclerView) findViewById(R.id.rv_demo);
     }
 }
