@@ -17,7 +17,7 @@ public class LogUtils {
      * Log级别
     * 默认为最低级别，即全部打印
     */
-    private int logLevel = Log.VERBOSE;
+    private int logLevel = Log.ERROR;
 
     private static LogUtils ourInstance;
     public static LogUtils getInstance() {

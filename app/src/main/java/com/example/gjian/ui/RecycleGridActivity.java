@@ -50,7 +50,7 @@ public class RecycleGridActivity extends BaseActivity {
     }
 
     private void initTitle() {
-        showTitle(R.mipmap.ic_launcher,"List",null,null);
+        showTitle(R.mipmap.ic_launcher,"Grid",null,null);
         setTitleBoxIsVisible(false,true,false);
     }
 }
