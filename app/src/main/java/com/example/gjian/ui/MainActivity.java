@@ -1,16 +1,16 @@
-package com.example.gjian;
+package com.example.gjian.ui;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.gjian.base.BaseActivity;
 import com.example.gjian.util.R;
 import com.example.gjian.util.ToastUtils;
 
-public class MainActivity extends Activity implements View.OnClickListener {
+public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     private TextView mTxtNormal;
     private TextView mTxtNormalCenter;
@@ -22,8 +22,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setLayoutContent(R.layout.activity_main);
+        initTitle();
         initView();
+    }
+
+    private void initTitle() {
+        showTitle(R.mipmap.ic_launcher,"主页",null,null);
+        setTitleBoxIsVisible(false,true,false);
     }
 
     private void initView() {
@@ -60,8 +66,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 ToastUtils.getInstance(this).cancelToast();
                 break;
             case R.id.txt_next:
-                Intent intent = new Intent(this,NextActivity.class);
-                startActivity(intent);
+               toActivity(NextActivity.class);
                 break;
             default:
                 break;

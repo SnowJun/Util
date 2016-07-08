@@ -6,18 +6,8 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.manager.toastutil.MainActivity">
+    tools:context="com.example.gjian.ui.MainActivity">
 
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10dp"
-        android:text="Toast"
-        android:gravity="center"
-        android:background="@android:color/darker_gray"
-        android:textColor="@android:color/white"
-        android:textSize="18sp" />
 
 
     <TextView

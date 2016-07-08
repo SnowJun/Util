@@ -1,17 +1,17 @@
-package com.example.gjian;
+package com.example.gjian.ui;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.example.gjian.base.BaseActivity;
 import com.example.gjian.util.R;
 import com.example.gjian.util.ToastUtils;
 
 /**
  * Created by Administrator on 2016/6/21.
  */
-public class NextActivity extends Activity implements View.OnClickListener {
+public class NextActivity extends BaseActivity implements View.OnClickListener {
 
 
     private TextView mTxtList;
@@ -21,9 +21,15 @@ public class NextActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_next);
+        setLayoutContent(R.layout.activity_next);
         ToastUtils.getInstance(getApplicationContext()).showToast("next page",false);
+        initTitle();
         initView();
+    }
+
+    private void initTitle() {
+        showTitle(R.mipmap.ic_launcher,"RecycleView",null,null);
+        setTitleBoxIsVisible(false,true,false);
     }
 
     private void initView() {
@@ -39,8 +45,10 @@ public class NextActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.txt_list:
+                toActivity(RecycleListActivity.class);
                 break;
             case R.id.txt_grid:
+                toActivity(RecycleGridActivity.class);
                 break;
             case R.id.txt_pull:
                 break;
