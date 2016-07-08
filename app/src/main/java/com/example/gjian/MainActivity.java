@@ -1,4 +1,4 @@
-package com.example.gjian.util;
+package com.example.gjian;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
+
+import com.example.gjian.util.R;
+import com.example.gjian.util.ToastUtils;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 

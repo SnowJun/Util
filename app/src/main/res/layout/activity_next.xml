@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txt_list"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"
+        android:text="RecycleView列表"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/txt_grid"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"
+        android:text="RecycleView网格"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/txt_pull"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:background="@android:color/holo_blue_bright"
+        android:textColor="@android:color/white"
+        android:text="RecycleView瀑布流"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
