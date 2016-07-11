@@ -51,6 +51,7 @@ public class NextActivity extends BaseActivity implements View.OnClickListener {
                 toActivity(RecycleGridActivity.class);
                 break;
             case R.id.txt_pull:
+                toActivity(RecycleStaggeredGridActivity.class);
                 break;
         }
     }

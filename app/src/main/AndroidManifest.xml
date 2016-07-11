@@ -20,6 +20,7 @@
     <activity android:name="com.example.gjian.ui.NextActivity"/>
     <activity android:name="com.example.gjian.ui.RecycleListActivity"/>
     <activity android:name="com.example.gjian.ui.RecycleGridActivity"/>
+    <activity android:name="com.example.gjian.ui.RecycleStaggeredGridActivity"/>
     </application>
 
 </manifest>

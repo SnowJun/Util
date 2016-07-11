@@ -37,7 +37,7 @@ public class LogUtils {
      * @param log Log内容
      */
     public void v(String tag,String log){
-        if (DEBUG && logLevel >= Log.VERBOSE){
+        if (DEBUG && (logLevel >= Log.VERBOSE)){
             Log.v(tag,"log_util_v:"+log);
         }
     }
@@ -49,7 +49,7 @@ public class LogUtils {
      * @param log Log内容
      */
     public void d(String tag,String log){
-        if (DEBUG && logLevel >= Log.DEBUG){
+        if (DEBUG && (logLevel >= Log.DEBUG)){
             Log.d(tag,"log_util_v:"+log);
         }
     }
@@ -61,7 +61,7 @@ public class LogUtils {
      * @param log Log内容
      */
     public void i(String tag,String log){
-        if (DEBUG && logLevel >= Log.INFO){
+        if (DEBUG && (logLevel >= Log.INFO)){
             Log.i(tag,"log_util_v:"+log);
         }
     }
@@ -73,7 +73,7 @@ public class LogUtils {
      * @param log Log内容
      */
     public void w(String tag,String log){
-        if (DEBUG && logLevel >= Log.WARN){
+        if (DEBUG && (logLevel >= Log.WARN)){
             Log.w(tag,"log_util_v:"+log);
         }
     }
@@ -85,7 +85,7 @@ public class LogUtils {
      * @param log Log内容
      */
     public void e(String tag,String log){
-        if (DEBUG && logLevel >= Log.ERROR){
+        if (DEBUG && (logLevel >= Log.ERROR)){
             Log.e(tag,"log_util_v:"+log);
         }
     }
