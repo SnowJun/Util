@@ -37,6 +37,8 @@
         android:padding="10dp"
         android:text="普通的图文显示Toast" />
 
+
+
     <TextView
         android:id="@+id/txt_img_center"
         android:layout_width="wrap_content"
@@ -45,6 +47,16 @@
         android:textColor="@android:color/holo_blue_dark"
         android:padding="10dp"
         android:text="中间的图文显示Toast" />
+
+
+    <TextView
+        android:id="@+id/txt_snack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:padding="10dp"
+        android:text="SnackBar" />
 
     <TextView
         android:id="@+id/txt_cancel"
